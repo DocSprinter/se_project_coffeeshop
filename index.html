@@ -3,65 +3,128 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Triple Peaks Library</title>
     <meta name="author" content="Denis Laroche" />
-    <meta
-      name="description"
-      content="An introduction to the Triple Espresso, Specialty Coffee in the Triple Peaks Library"
-    />
+    <meta name="description" content="Triple Peaks Coffee Shop" />
     <meta
       name="keywords"
-      content="library, books, reading, coffee, reservation, recipes, events, staff picks, membership, about, contacts"
+      content="library, books, reading, coffee, reservation, menu, contacts"
     />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <link rel="stylesheet" href="./vendor/normalize.css" />
-    <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="favicon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <title>Triple Espresso</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./vendor/normalize.css" />
+    <link rel="stylesheet" href="pages/index.css" />
   </head>
 
   <body>
     <div class="page">
-      <header>
-        <div class="header-block">
-          <h1>Header</h1>
+      <header class="header">
+        <nav class="nav">
+          <img
+            src="./images/logo_coffeeshop_dark.svg"
+            alt="Triple Expresso Logo"
+            class="nav__logo"
+          />
+          <ul class="nav__links">
+            <li><a href="#recipes" class="nav__link">Recipes</a></li>
+            <li><a href="#book-a-table" class="nav__link">Book a table</a></li>
+            <li><a href="#menu" class="nav__link">Menu</a></li>
+            <li><a href="#contacts" class="nav__link">Contacts</a></li>
+          </ul>
+        </nav>
+        <h1 class="header__title">
+          <span class="header__span-accent">Specialty Coffee</span> in the
+          Triple Peaks Library
+        </h1>
+        <p class="header__description">
+          Welcome to our study zone! We've got the coffee to energize you
+          <br />and the cozy vibes to help you get creative.
+        </p>
+        <img
+          src="./images/inside_coffee_shop.png"
+          alt="Illustration 'Inside the
+        Coffee shop'"
+          class="header__image"
+        />
+        <div class="header__footer">
+          <div>
+            <p class="header__paragraphs">Hours</p>
+            <p class="header__paragraphs">Monday-Friday (10:00-19:00)</p>
+            <p class="header__paragraphs">Saturday-Sunday (11:00-18:00)</p>
+          </div>
+          <p class="header__paragraph">
+            200 Success Avenue, The Town of Triple Peaks
+          </p>
         </div>
       </header>
-
-      <main>
-        <section id="Recipes">
-          <div class="recipes-block">
-            <h2>Recipes</h2>
+      <main class="content">
+        <section id="recipes" class="recipes">
+          <h2 class="recipes__title">Recipes</h2>
+          <p class="recipes__subtitle">
+            Check out some recipes we've collected for<br />
+            your home-brewing convenience:
+          </p>
+          <div class="recipes__videos">
+            <div>
+              <iframe
+                src="https://www.youtube.com/embed/uWqKMF4bHHc?si=Gv_vI3Yc91vI4kQa"
+                title="YouTube video player"
+                class="recipes__iframe"
+              ></iframe>
+              <p class="recipes__video-caption">
+                <span>Aeropress recipe</span><span> ~5 min</span>
+              </p>
+            </div>
+            <div>
+              <iframe
+                src="https://www.youtube.com/embed/nHR2d39OPGo?si=W6j_vep48mSo8h8U"
+                title="YouTube video player"
+                class="recipes__iframe"
+              ></iframe>
+              <p class="recipes__video-caption">
+                <span>French press recipe</span><span> ~15 min</span>
+              </p>
+            </div>
           </div>
         </section>
-
-        <section id="Reservation">
-          <div class="reservation-block">
-            <h2>Reservation</h2>
-          </div>
+        <section id="reservation" class="reservation">
+          <h2 class ="reservation__title">Book a Table</h2>
+          <form action="" class="reservation__form form">
+            <fieldset class="form__fieldset">
+              <label for="" class="form"__label">
+                Name *<input type="text" class="form__input"/>
+              </label>
+              <label for="" class="form"__label">
+                Number of guests *<input type="number" class="form__input"/>
+              </label>
+              <label for="" class="form"__label">
+                Date & time *<input type="datetime-local" class="form__input"/>
+              </label>
+              <label for="" class="form"__label">
+                Your email *<input type="email" class="form__input"/>
+              </label>
+            </fieldset>
+            <button class="form__button">Book a table</button>
+            <label for="" class="__label form__label_type_checkbox">
+            <input type="checkbox" class="form__checkbox">
+            I agree with terms of use
+            </label>
+          </form>
         </section>
-
-        <section id="menu">
-          <div class="menu-block">
-            <h2>Menu</h2>
-          </div>
+        <section id="menu" class="menu">
+          <h2>Menu</h2>
         </section>
-
-        <section id="about">
-          <div class="about-block">
-            <h2>About</h2>
-          </div>
+        <section id="contacts" class="contacts">
+          <h2>Contacts</h2>
         </section>
       </main>
-
-      <footer class="footer" id="footer">
-        <div class="footer"></div>
-        <p class="footer__copyright">&copy; Denis Laroche</p>
+      <footer class="footer">
+        <p class="footer__text"></p>
       </footer>
     </div>
   </body>
